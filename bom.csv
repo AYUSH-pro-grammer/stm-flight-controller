@@ -8,7 +8,7 @@ Reference,Component,Quantity,Unit Price (USD),Product Link
 "C15; C16","SAMWHA 1uF 0603",2,0.0134,https://www.lcsc.com/product-detail/C513775.html
 "C25; C26","YAGEO 22uF 1210",2,0.5208,https://www.lcsc.com/product-detail/C5341638.html
 "C27","KEMET 220pF 0603",1,0.1150,https://www.lcsc.com/product-detail/C3843887.html
-"C30","Samsung Electro-Mechanics CL10A105KB8NNNC 1uF 50V 0603",1,N/A,https://www.lcsc.com/product-detail/C15849.html
+"C30","Samsung Electro-Mechanics CL10A105KB8NNNC 1uF 50V 0603",1,0.0159,https://www.lcsc.com/product-detail/C15849.html
 "C31","YAGEO 4.7uF 0805 25V",1,0.0717,https://www.lcsc.com/product-detail/C5185457.html
 "C32","FH 4.7uF 0805 25V",1,0.0617,https://www.lcsc.com/product-detail/C274413.html
 "C33","CCTC 10nF 0603",1,0.0055,https://www.lcsc.com/product-detail/C282516.html
@@ -25,8 +25,9 @@ Reference,Component,Quantity,Unit Price (USD),Product Link
 "FB1","Murata BLM18PG121SN1D Ferrite Bead",1,0.0153,https://www.lcsc.com/product-detail/C14709.html
 "FB2; FB3","TAI-TECH HCB1608KF-121T30 120R Ferrite Bead 0603",2,0.0087,https://www.lcsc.com/product-detail/C353920.html
 "J1","HMTCONN Micro-USB B SMD right-angle - footprint check required",1,0.0704,https://www.lcsc.com/product-detail/C53121380.html
-"J2; J4; J23; J17; J19; J20; J21; J24; J25; J26; J28","BOOMELE 2.54mm 1x40P male header strip - cut to length",2,0.1575,https://www.lcsc.com/product-detail/C2337.html
+"J2; J4; J23; J17; J18; J19; J20; J21; J22; J24; J25; J26; J28","BOOMELE 2.54mm 1x40P male header strip - cut to length",2,0.1575,https://www.lcsc.com/product-detail/C2337.html
 "J3","Hirose DM3AT-SF-PEJM5 MicroSD Connector",1,1.4048,https://www.lcsc.com/product-detail/C114218.html
+"J29","ronghe RH-5016 SMD Test Point (4.0x4.0mm pad) - footprint check required",1,0.0926,https://www.lcsc.com/product-detail/C5199799.html
 "L1","KOHERelec MDA7030-4R7M 4.7uH",1,0.6353,https://www.lcsc.com/product-detail/C2847483.html
 "R1","YAGEO 1k 0603",1,0.0053,https://www.lcsc.com/product-detail/C22548.html
 "R2","SEI 332k 1206",1,0.0145,https://www.lcsc.com/product-detail/C2486051.html
@@ -36,15 +37,16 @@ Reference,Component,Quantity,Unit Price (USD),Product Link
 "R15","SEI 35.7k 1206",1,0.1044,https://www.lcsc.com/product-detail/C2533888.html
 "R16","YAGEO 0 ohm 0603",1,0.0021,https://www.lcsc.com/product-detail/C95177.html
 "R17","TE Connectivity 10.5k 1206",1,0.2813,https://www.lcsc.com/product-detail/C2084092.html
+"R18","YAGEO RT0603BRD073K2L 3.2k 0603",1,0.0371,https://www.lcsc.com/product-detail/C861375.html
 "SW1","C&K PCM12 SPDT Slide Switch",1,1.2754,https://www.lcsc.com/product-detail/C221841.html
 "SW2","C&K PTS647 Tactile Switch",1,0.2704,https://www.lcsc.com/product-detail/C2800043.html
 "U1","TDK InvenSense MPU-6050",1,20.2250,https://www.lcsc.com/product-detail/C24112.html
 "U2","ST STM32F405RGT6",1,6.9460,https://www.lcsc.com/product-detail/C15742.html
 "U3","AMS1117-3.3",1,0.2093,https://www.lcsc.com/product-detail/C6186.html
 "U4","ST LIS3MDLTR",1,3.7855,https://www.lcsc.com/product-detail/C478483.html
-"U5","Bosch BMP280 Digital Pressure Sensor",1,N/A,https://robu.in/product/bosch-bmp280-digital-pressure-sensor/
+"U5","Bosch BMP280 Digital Pressure Sensor",1,8.3900,https://robu.in/product/bosch-bmp280-digital-pressure-sensor/
 "U6","TI TPS5431DDA",1,3.7620,https://www.lcsc.com/product-detail/C1355446.html
 "U7","ST USBLC6-2SC6",1,0.1786,https://www.lcsc.com/product-detail/C7519.html
 "Y1","DIODES FY1600066 16MHz Crystal",1,1.0077,https://www.lcsc.com/product-detail/C5717615.html
-"", "PCB", 1, 8, "https://jlcpcb.com"
-"TOTAL","Known-price items subtotal",,52,
+"PCB","PCB",1,8.0000,https://jlcpcb.com
+"TOTAL","All items + PCB subtotal",,60.5830,

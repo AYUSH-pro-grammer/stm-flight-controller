@@ -13,6 +13,20 @@ Power management - There is a power management circuit on the board to provide t
 Communication - The sensors are connected to the STM32F405 using I2C. This means the microcontroller can collect the data from the sensors.
 
 
+## Assembly
+
+Put the components together following the KiCad PCB and BOM layout. Pay attention to the orientation of the components (particularly the ICs, diodes and connectors). Once assembled, make sure there are no solder bridges or incorrect solder joints before powering on.
+
+## Programming
+
+The STM32F405 can be programmed using the SWD connector. Simply connect the SWDIO, SWCLK and GND pins. Also connect the 3.3V reference pin. Using STM32CubeProgrammer the firmware can be flashed.
+
+## Firmware
+
+The firmware consists of using the Betaflight open source flight controller firmware ([https://github.com/betaflight/betaflight](https://github.com/betaflight/betaflight)). The board uses an STM32F405 with MPU6050, LIS3MDL and BMP280.
+
+The firmware will need to be configured for the custom board. This includes pin configuration, sensor connection and so on. You can find the source code and build instructions in the Betaflight repository.
+
 ## Images
 
 **Schematic View**
@@ -28,10 +42,10 @@ Communication - The sensors are connected to the STM32F405 using I2C. This means
 ![PCB Back 3D View](image/pcb_back_3d.png)
 
 # BOM 
-Here's your updated README table with the total line cost (`Quantity × Unit Price`) populated for every component, including `C30` ($0.0159) and `U5` ($8.39), updating the grand total with PCB fabrication to **$60.4533**:
+
 
 | Reference | Component | Quantity | Link | Cost |
-| --- | --- | --- | --- | --- |
+|---|---|---:|---|---:|
 | C1; C5 | YAGEO 10pF 0402 | 2 | [LCSC](https://www.lcsc.com/product-detail/C3860506.html) | $0.0426 |
 | C2 | CCTC 10uF 0805 | 1 | [LCSC](https://www.lcsc.com/product-detail/C380331.html) | $0.0420 |
 | C3; C7; C13; C23; C24; C28; C29 | FH 100nF 0603 | 7 | [LCSC](https://www.lcsc.com/product-detail/C30926.html) | $0.0371 |
@@ -58,8 +72,9 @@ Here's your updated README table with the total line cost (`Quantity × Unit Pri
 | FB1 | Murata BLM18PG121SN1D Ferrite Bead | 1 | [LCSC](https://www.lcsc.com/product-detail/C14709.html) | $0.0153 |
 | FB2; FB3 | TAI-TECH HCB1608KF-121T30 120R Ferrite Bead 0603 | 2 | [LCSC](https://www.lcsc.com/product-detail/C353920.html) | $0.0174 |
 | J1 | HMTCONN Micro-USB B SMD right-angle | 1 | [LCSC](https://www.lcsc.com/product-detail/C53121380.html) | $0.0704 |
-| J2; J4; J23; J17; J19; J20; J21; J24; J25; J26; J28 | BOOMELE 2.54mm 1x40P male header strip (cut to length) | 2 | [LCSC](https://www.lcsc.com/product-detail/C2337.html) | $0.3150 |
+| J2; J4; J23; J17; J18; J19; J20; J21; J22; J24; J25; J26; J28 | BOOMELE 2.54mm 1x40P male header strip (cut to length) | 2 | [LCSC](https://www.lcsc.com/product-detail/C2337.html) | $0.3150 |
 | J3 | Hirose DM3AT-SF-PEJM5 MicroSD Connector | 1 | [LCSC](https://www.lcsc.com/product-detail/C114218.html) | $1.4048 |
+| J29 | ronghe RH-5016 SMD Test Point (4.0x4.0mm pad) | 1 | [LCSC](https://www.lcsc.com/product-detail/C5199799.html) | $0.0926 |
 | L1 | KOHERelec MDA7030-4R7M 4.7uH | 1 | [LCSC](https://www.lcsc.com/product-detail/C2847483.html) | $0.6353 |
 | R1 | YAGEO 1k 0603 | 1 | [LCSC](https://www.lcsc.com/product-detail/C22548.html) | $0.0053 |
 | R2 | SEI 332k 1206 | 1 | [LCSC](https://www.lcsc.com/product-detail/C2486051.html) | $0.0145 |
@@ -69,6 +84,7 @@ Here's your updated README table with the total line cost (`Quantity × Unit Pri
 | R15 | SEI 35.7k 1206 | 1 | [LCSC](https://www.lcsc.com/product-detail/C2533888.html) | $0.1044 |
 | R16 | YAGEO 0 ohm 0603 | 1 | [LCSC](https://www.lcsc.com/product-detail/C95177.html) | $0.0021 |
 | R17 | TE Connectivity 10.5k 1206 | 1 | [LCSC](https://www.lcsc.com/product-detail/C2084092.html) | $0.2813 |
+| R18 | YAGEO RT0603BRD073K2L 3.2k 0603 | 1 | [LCSC](https://www.lcsc.com/product-detail/C861375.html) | $0.0371 |
 | SW1 | C&K PCM12 SPDT Slide Switch | 1 | [LCSC](https://www.lcsc.com/product-detail/C221841.html) | $1.2754 |
 | SW2 | C&K PTS647 Tactile Switch | 1 | [LCSC](https://www.lcsc.com/product-detail/C2800043.html) | $0.2704 |
 | U1 | TDK InvenSense MPU-6050 | 1 | [LCSC](https://www.lcsc.com/product-detail/C24112.html) | $20.2250 |
@@ -79,5 +95,5 @@ Here's your updated README table with the total line cost (`Quantity × Unit Pri
 | U6 | TI TPS5431DDA | 1 | [LCSC](https://www.lcsc.com/product-detail/C1355446.html) | $3.7620 |
 | U7 | ST USBLC6-2SC6 | 1 | [LCSC](https://www.lcsc.com/product-detail/C7519.html) | $0.1786 |
 | Y1 | DIODES FY1600066 16MHz Crystal | 1 | [LCSC](https://www.lcsc.com/product-detail/C5717615.html) | $1.0077 |
-| PCB | PCB fabrication | 1 | — | $8.0000 |
-| **TOTAL** | **Components + PCB fabrication** |  |  | **$60.4533** |
+| PCB | PCB fabrication | 1 | — | $8.00 |
+| **TOTAL** | **Components + PCB fabrication** | | | **$60.5830** |
